@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de l'École ENSITECH</title>
+    <link rel="shortcut icon" href="./image/ImageEnsitech.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/apps.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">ENSITECH</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#dashboard">Tableau de bord</a></li>
+                <li><a href="#students">Étudiants</a></li>
+                <li><a href="#teachers">Enseignants</a></li>
+                <li><a href="#courses">Cours</a></li>
+                <li><a href="#reports">Rapports</a></li>
+                <li><a href="#settings">Paramètres</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="hero-content">
+            <h1>Bienvenue sur la plateforme de gestion ENSITECH</h1>
+            <p>Une solution complète pour gérer efficacement votre établissement scolaire.</p>
+            <a href="#dashboard" class="cta-button">Accéder au Tableau de bord</a>
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-section">
+        <h2>Tableau de bord</h2>
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Étudiants</h3>
+                <p>Total : 1200</p>
+                <a href="#students" class="card-link">Voir les détails</a>
+            </div>
+            <div class="card">
+                <h3>Enseignants</h3>
+                <p>Total : 150</p>
+                <a href="#teachers" class="card-link">Voir les détails</a>
+            </div>
+            <div class="card">
+                <h3>Cours</h3>
+                <p>Total : 80</p>
+                <a href="#courses" class="card-link">Voir les détails</a>
+            </div>
+            <div class="card">
+                <h3>Rapports</h3>
+                <p>Rapports académiques disponibles</p>
+                <a href="#reports" class="card-link">Voir les rapports</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="students" class="students-section">
+        <h2>Gestion des Étudiants</h2>
+        <div class="content-section">
+            <p>Gérez les informations des étudiants : création, modification, suppression et suivi.</p>
+            <a href="#" class="cta-button">Ajouter un étudiant</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Dupont</td>
+                        <td>Jean</td>
+                        <td>jean.dupont@example.com</td>
+                        <td><a href="#">Modifier</a> | <a href="#">Supprimer</a></td>
+                    </tr>
+                    <!-- Autres lignes -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="teachers" class="teachers-section">
+        <h2>Gestion des Enseignants</h2>
+        <div class="content-section">
+            <p>Gérez les informations des enseignants : création, modification, suppression et suivi des cours enseignés.</p>
+            <a href="#" class="cta-button">Ajouter un enseignant</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Matière</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Durand</td>
+                        <td>Marie</td>
+                        <td>marie.durand@example.com</td>
+                        <td>Mathématiques</td>
+                        <td><a href="#">Modifier</a> | <a href="#">Supprimer</a></td>
+                    </tr>
+                    <!-- Autres lignes -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="courses" class="courses-section">
+        <h2>Gestion des Cours</h2>
+        <div class="content-section">
+            <p>Gérez les cours : création, modification, suppression et affectation des enseignants.</p>
+            <a href="#" class="cta-button">Ajouter un cours</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Thème</th>
+                        <th>Nombre d'heures</th>
+                        <th>Enseignant</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>301</td>
+                        <td>Informatique</td>
+                        <td>40</td>
+                        <td>Albert Einstein</td>
+                        <td><a href="#">Modifier</a> | <a href="#">Supprimer</a></td>
+                    </tr>
+                    <!-- Autres lignes -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="reports" class="reports-section">
+        <h2>Rapports Académiques</h2>
+        <div class="content-section">
+            <p>Générez et consultez les rapports académiques pour suivre les performances des étudiants et des enseignants.</p>
+            <a href="#" class="cta-button">Générer un rapport</a>
+        </div>
+    </section>
+
+    <section id="settings" class="settings-section">
+        <h2>Paramètres</h2>
+        <div class="content-section">
+            <p>Configurez les paramètres du système : rôles utilisateurs, accès, sécurité, etc.</p>
+            <a href="#" class="cta-button">Configurer</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 ENSITECH. Tous droits réservés.</p>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

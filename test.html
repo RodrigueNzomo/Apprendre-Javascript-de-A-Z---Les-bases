@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de l'École ENSITECH GROUPE 1</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./image/ImageEnsitech.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand logo" href="#">ENSITECH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard">Tableau de bord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#students">Étudiants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teachers">Enseignants</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reports">Rapports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#settings">Paramètres</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="home-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1>Bienvenue sur la plateforme de gestion ENSITECH <strong>GROUPE 1</strong></h1>
+            <p>Une solution complète pour gérer efficacement votre établissement scolaire.</p>
+            <a href="#dashboard" class="btn btn-custom-blue">Accéder au Tableau de bord</a>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2 class="text-center">Tableau de bord</h2>
+            <div class="row dashboard-cards">
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3>Étudiants</h3>
+                        <p>Total : 1200</p>
+                        <a href="#students" class="card-link">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3>Enseignants</h3>
+                        <p>Total : 150</p>
+                        <a href="#teachers" class="card-link">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3>Cours</h3>
+                        <p>Total : 80</p>
+                        <a href="#courses" class="card-link">Voir les détails</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <h3>Rapports</h3>
+                        <p>Rapports académiques disponibles</p>
+                        <a href="#reports" class="card-link">Voir les rapports</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Students Management Section -->
+    <section id="students" class="students-section">
+        <div class="container">
+            <h2 class="text-center">Gestion des Étudiants</h2>
+            <p class="text-center">Gérez les informations des étudiants : création, modification, suppression et suivi.</p>
+            <div class="text-center mb-4">
+                <a href="#" class="btn btn-custom-blue">Ajouter un étudiant</a>
+            </div>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Dupont</td>
+                        <td>Jean</td>
+                        <td>jean.dupont@example.com</td>
+                        <td>
+                            <a href="#" class="text-primary">Modifier</a> |
+                            <a href="#" class="text-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <!-- Autres lignes -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Teachers Management Section -->
+    <section id="teachers" class="teachers-section">
+        <div class="container">
+            <h2 class="text-center">Gestion des Enseignants</h2>
+            <p class="text-center">Gérez les informations des enseignants : création, modification, suppression et suivi des cours enseignés.</p>
+            <div class="text-center mb-4">
+                <a href="#" class="btn btn-custom-blue">Ajouter un enseignant</a>
+            </div>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Matière</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Durand</td>
+                        <td>Marie</td>
+                        <td>marie.durand@example.com</td>
+                        <td>Mathématiques</td>
+                        <td>
+                            <a href="#" class="text-primary">Modifier</a> |
+                            <a href="#" class="text-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <!-- Autres lignes -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Courses Management Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="text-center">Gestion des Cours</h2>
+            <p class="text-center">Gérez les cours : création, modification, suppression et affectation des enseignants.</p>
+            <div class="text-center mb-4">
+                <a href="#" class="btn btn-custom-blue">Ajouter un cours</a>
+            </div>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Thème</th>
+                        <th>Nombre d'heures</th>
+                        <th>Enseignant</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>301</td>
+                        <td>Informatique</td>
+                        <td>40</td>
+                        <td>Albert Einstein</td>
+                        <td>
+                            <a href="#" class="text-primary">Modifier</a> |
+                            <a href="#" class="text-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                    <!-- Autres lignes -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Reports Section -->
+    <section id="reports" class="reports-section">
+        <div class="container">
+            <h2 class="text-center">Rapports Académiques</h2>
+            <p class="text-center">Générez et consultez les rapports académiques pour suivre les performances des étudiants et des enseignants.</p>
+            <div class="text-center">
+                <a href="#" class="btn btn-custom-blue">Générer un rapport</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section id="settings" class="settings-section">
+        <div class="container">
+            <h2 class="text-center">Paramètres</h2>
+            <p class="text-center">Configurez les paramètres du système : rôles utilisateurs, accès, sécurité, etc.</p

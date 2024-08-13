@@ -1,0 +1,316 @@
+/* stylesensitech.css */
+
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #4A4A4A;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    padding-top: 70px;
+}
+
+/* Navigation */
+.header {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00bcd4; /* Couleur turquoise */
+}
+
+/* Boutons personnalisés */
+.btn-custom-blue {
+    background-color: #0091ff; /* Bleu vif */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-blue:hover {
+    background-color: #007bff; /* Bleu légèrement plus foncé */
+    color: #ffffff;
+}
+
+.btn-custom-yellow {
+    background-color: #ffc107; /* Jaune vif */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-yellow:hover {
+    background-color: #e0a800; /* Jaune légèrement plus foncé */
+    color: #ffffff;
+}
+
+/* Hero Section */
+.home-section {
+    background-image: url('./images/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 20px;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(31, 31, 31, 0.6);
+}
+
+.home-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    background-color: #00bcd4; /* Turquoise */
+    color: #ffffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #0097a7; /* Turquoise légèrement plus foncé */
+}
+
+/* Dashboard Cards */
+.dashboard-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.dashboard-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #323c48;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f7f9fc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #323c48;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.card-link {
+    color: #00bcd4; /* Turquoise */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #0097a7; /* Turquoise légèrement plus foncé */
+}
+
+/* Tables for Students, Teachers, and Courses */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table thead {
+    background-color: #00bcd4; /* Turquoise */
+    color: #ffffff;
+}
+
+.table thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.table tbody tr {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table tbody td {
+    padding: 15px;
+    color: #323c48;
+    font-size: 1rem;
+}
+
+.table tbody td a {
+    color: #00bcd4; /* Turquoise */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.table tbody td a:hover {
+    color: #0097a7; /* Turquoise légèrement plus foncé */
+}
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    color: #323c48;
+}
+
+/* Content Sections */
+.content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.cta-button-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-button-section a {
+    background-color: #00bcd4; /* Turquoise */
+    color: #ffffff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cta-button-section a:hover {
+    background-color: #0097a7; /* Turquoise légèrement plus foncé */
+}
+
+/* Footer */
+.footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
