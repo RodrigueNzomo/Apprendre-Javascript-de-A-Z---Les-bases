@@ -313,4 +313,22 @@ section h2 {
     .dashboard-cards {
         grid-template-columns: 1fr;
     }
+    .centered-caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2em;
+        color: #345e3d;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        max-width: 90%;
+        width: 600px;
+        margin: 0 auto;
+        height: 100vh;
+        background-color: #516786;
+    }
 }
