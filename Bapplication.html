@@ -1,0 +1,767 @@
+<!--
+  La déclaration <!DOCTYPE html> est utilisée pour indiquer au navigateur qu'il doit interpréter le document en utilisant la norme HTML5. 
+  Cela permet d'assurer une meilleure compatibilité et un rendu correct du contenu dans les navigateurs modernes.
+-->
+<!DOCTYPE html>
+<!--
+  La balise <html lang="fr"> spécifie que la langue principale du contenu de la page est le français.
+  Cela aide les moteurs de recherche, les lecteurs d'écran, et les navigateurs à interpréter correctement le texte et les éléments de la page.
+-->
+<html lang="fr">
+
+<!-- Block Head -->
+
+<head>
+    <!--
+      Le méta-élément charset définit le codage des caractères utilisé par le document, ici UTF-8, pour assurer une compatibilité globale avec les caractères spéciaux.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+      Le méta-élément viewport contrôle la mise en page sur les appareils mobiles et assure que la page s'adapte correctement à différentes tailles d'écran.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+      Le titre de la page, affiché dans l'onglet du navigateur. Ici, il indique que la page concerne la gestion de l'école ENSITECH.
+    -->
+    <title>Gestion de l'École ENSITECH Groupe 1 dans lecadre de la Soutenance Acadeemique du 31 Août 2024 </title>
+
+    <!--
+      L'icône de raccourci (favicon) affichée dans l'onglet du navigateur à côté du titre. Le fichier est une image localisée dans le répertoire 'image'.
+    -->
+    <link rel="shortcut icon" href="./image/ImageEnsitech.png" type="image/x-icon">
+
+    <!--
+      Intégration de la police Poppins depuis Google Fonts, avec des poids de 400, 600, et 700, pour styliser le texte de la page.
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--
+      Inclusion de la feuille de style CSS personnalisée 'apps.css' située dans le répertoire 'css' pour les styles spécifiques à l'application.
+    -->
+    <!-- <link rel="stylesheet" href="./css/apps.css"> -->
+
+    <!--
+    Inclusion de la bibliothèque CSS Bootstrap version 5.3.1 depuis un CDN pour utiliser ses composants réactifs et ses styles prédéfinis.
+    Bootstrap 5 apporte des améliorations et de nouvelles fonctionnalités par rapport à la version 4.5.2.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.1/css/bootstrap.min.css"> -->
+
+</head>
+
+<!-- Body Block -->
+
+<body>
+    <header class="header">
+        <!--
+          La section <header> contient l'en-tête de la page, qui inclut la navigation principale.
+          Bootstrap est utilisé ici pour créer une barre de navigation réactive et bien structurée.
+        -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--
+              La classe 'navbar' de Bootstrap définit la barre de navigation.
+              'navbar-expand-lg' permet à la barre de navigation de s'étendre sur les écrans larges, mais de se replier sur les petits écrans.
+              'navbar-light bg-light' applique un style clair à la barre de navigation.
+            -->
+
+            <a class="navbar-brand" href="#">
+                <!--
+                  'navbar-brand' est utilisé pour le logo ou le nom de la marque.
+                  Ici, ENSITECH est affiché comme le nom de l'école, servant de logo textuel.
+                -->
+                ENSITECH
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--
+                  'navbar-toggler' crée un bouton pour basculer la navigation sur les petits écrans.
+                  Le bouton déclenche l'affichage du menu lorsque l'espace est limité.
+                -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--
+                  'collapse navbar-collapse' regroupe les éléments de navigation dans un conteneur qui se replie sur les petits écrans.
+                  'id="navbarNav"' lie ce conteneur au bouton de basculement.
+                -->
+
+                <ul class="navbar-nav ml-auto">
+                    <!--
+                      'navbar-nav' applique le style de liste de navigation de Bootstrap.
+                      'ml-auto' aligne les liens à droite de la barre de navigation.
+                    -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Accueil</a>
+                        <!-- 'nav-link' stylise chaque lien de navigation selon les standards Bootstrap. -->
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard">Tableau de bord</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#students">Étudiants</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teachers">Enseignants</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Cours</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reports">Rapports</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#settings">Paramètres</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Section 1 : Accueil -->
+    <section id="home" class="home-section">
+        <!--
+      Cette section représente la page d'accueil de la plateforme ENSITECH.
+      L'identifiant 'home' permet de cibler cette section pour les liens d'ancrage, tandis que 'home-section' peut être utilisé pour appliquer des styles personnalisés.
+    -->
+
+        <div class="hero-content text-center">
+            <!--
+          Le conteneur 'hero-content' centralise le contenu principal de l'accueil.
+          'text-center' est une classe Bootstrap qui centre horizontalement le texte et les éléments contenus.
+        -->
+
+            <h1 class="display-4">Bienvenue sur la plateforme de gestion ENSITECH</h1>
+            <!--
+          Le titre principal de la page d'accueil.
+          'display-4' est une classe Bootstrap qui applique un style de titre large et bien espacé, adapté pour les titres de sections importantes.
+        -->
+
+            <p class="lead">Une solution complète pour gérer efficacement votre établissement scolaire.</p>
+            <!--
+          Un paragraphe de description. 'lead' est une classe Bootstrap qui augmente la taille du texte pour les éléments descriptifs importants.
+        -->
+
+            <a href="#dashboard" class="btn btn-primary cta-button mt-4">
+                <!--
+              Un bouton d'appel à l'action (CTA) qui redirige vers le Tableau de bord.
+              'btn btn-primary' sont des classes Bootstrap qui stylisent le lien comme un bouton bleu principal.
+              'cta-button' est une classe personnalisée que vous pouvez utiliser pour des styles supplémentaires, tandis que 'mt-4' ajoute une marge supérieure pour espacer le bouton du texte précédent.
+            -->
+                Accéder au Tableau de bord
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <!-- Section 2 : Tableau de bord -->
+    <section id="dashboard" class="dashboard-section py-5">
+        <!--
+      Cette section représente le Tableau de bord de la plateforme ENSITECH.
+      L'identifiant 'dashboard' permet de cibler cette section pour les liens d'ancrage.
+      'dashboard-section' peut être utilisé pour des styles spécifiques, et 'py-5' ajoute un espacement vertical (padding) en haut et en bas.
+    -->
+
+        <div class="container">
+            <!--
+          'container' est une classe Bootstrap qui centre et limite la largeur du contenu, garantissant que celui-ci est correctement aligné et espacé.
+        -->
+
+            <h2 class="text-center mb-5">Tableau de bord</h2>
+            <!--
+          Le titre de la section Tableau de bord.
+          'text-center' centre le texte, et 'mb-5' ajoute une marge inférieure pour espacer le titre du contenu suivant.
+        -->
+
+            <div class="row">
+                <!--
+              'row' est une classe Bootstrap qui crée une ligne pour organiser les cartes en colonnes.
+            -->
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <!--
+                  'col-lg-3 col-md-6' sont des classes Bootstrap pour définir la largeur des colonnes : 
+                  - 'col-lg-3' fait que chaque carte occupe un quart de la largeur sur les grands écrans.
+                  - 'col-md-6' fait que chaque carte occupe la moitié de la largeur sur les écrans moyens.
+                  'mb-4' ajoute une marge inférieure pour espacer les cartes.
+                -->
+                    <div class="card text-center p-3">
+                        <!--
+                      'card' est une classe Bootstrap pour styliser les boîtes de contenu (les cartes).
+                      'text-center' centre le texte à l'intérieur de la carte, et 'p-3' ajoute un rembourrage autour du contenu.
+                    -->
+
+                        <h3><i class="bi bi-people"></i> Étudiants</h3>
+                        <!--
+                      'bi bi-people' est une classe d'icône Bootstrap (si Bootstrap Icons est utilisé). 
+                      Vous pouvez remplacer cela par une icône appropriée selon votre choix.
+                    -->
+                        <p>Total : 1200</p>
+                        <a href="#students" class="btn btn-outline-primary card-link">Voir les détails</a>
+                        <!--
+                      'btn btn-outline-primary' stylise le lien comme un bouton avec un contour bleu, tandis que 'card-link' peut être utilisé pour d'autres styles spécifiques.
+                    -->
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center p-3">
+                        <h3><i class="bi bi-person"></i> Enseignants</h3>
+                        <p>Total : 150</p>
+                        <a href="#teachers" class="btn btn-outline-primary card-link">Voir les détails</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center p-3">
+                        <h3><i class="bi bi-book"></i> Cours</h3>
+                        <p>Total : 80</p>
+                        <a href="#courses" class="btn btn-outline-primary card-link">Voir les détails</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center p-3">
+                        <h3><i class="bi bi-file-earmark-text"></i> Rapports</h3>
+                        <p>Rapports académiques disponibles</p>
+                        <a href="#reports" class="btn btn-outline-primary card-link">Voir les rapports</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 : Gestion des Étudiants -->
+    <section id="students" class="students-section py-5">
+        <!--
+      Cette section est dédiée à la gestion des étudiants de l'école ENSITECH.
+      'students-section' est une classe personnalisée pour les styles spécifiques à cette section, et 'py-5' ajoute du padding vertical pour espacer le contenu.
+    -->
+
+        <div class="container">
+            <!--
+          'container' centre le contenu et ajoute une marge horizontale automatique, tout en limitant la largeur maximale.
+        -->
+
+            <div class="text-center mb-5">
+                <!--
+              Cette div contient le texte principal de la section, centré et avec une marge inférieure pour espacer les éléments.
+            -->
+                <h1 class="display-4"
+                    style="font-size: 3em; color: #1a1918; text-shadow: 0 0 10px #00e1ff, 0 0 20px #ffcc00, 0 0 30px #002fff;">
+                    <!--
+                  Un titre avec un style personnalisé, utilisant des ombres de texte pour un effet visuel attrayant.
+                  'display-4' est une classe Bootstrap pour un titre large.
+                -->
+                    <span>&#9996;</span> ENSITECH est une école d’enseignement supérieur spécialisée dans les métiers du
+                    Numérique.
+                </h1>
+                <div class="mt-3">
+                    <!--
+                  Cette div contient des liens externes ouverts dans de nouveaux onglets. 
+                  'mt-3' ajoute une marge en haut pour espacer les liens du titre.
+                -->
+                    <a href="https://www.ensitech.eu/" target="_blank" class="d-block mb-2">La Plateforme du client
+                        Ensitech</a>
+                    <!--
+                  Chaque lien est stylisé comme un bloc (d-block) avec une marge inférieure (mb-2) pour les espacer verticalement.
+                -->
+                    <a href="https://htmlcheatsheet.com/" target="_blank" class="d-block mb-2">HTML cheat Sheet</a>
+                    <a href="https://roadmap.sh/frontend" target="_blank" class="d-block mb-2">The roadmap frontend</a>
+                    <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank"
+                        class="d-block mb-2">Icones en HTML</a>
+                </div>
+            </div>
+
+            <h2 class="text-center mb-4">Gestion des Étudiants</h2>
+            <!--
+          Le sous-titre de la section, centré avec une marge inférieure pour espacer le contenu.
+        -->
+
+            <div class="content-section">
+                <p class="text-center">Gérez les informations des étudiants : création, modification, archivage,
+                    suppression
+                    et suivi.</p>
+                <!--
+              Un paragraphe descriptif centré pour expliquer la gestion des étudiants.
+            -->
+
+                <div class="text-center mb-4">
+                    <a href="#add-student" class="btn btn-primary">Ajouter un étudiant</a>
+                    <!--
+                  Un bouton principal stylisé avec Bootstrap pour ajouter un nouvel étudiant.
+                  'btn btn-primary' crée un bouton bleu avec une marge inférieure pour espacer du tableau.
+                -->
+                </div>
+
+                <div class="table-responsive">
+                    <!--
+                  'table-responsive' de Bootstrap permet à la table de défiler horizontalement sur les petits écrans.
+                -->
+                    <table class="table table-bordered table-striped">
+                        <!--
+                      'table' applique les styles de table Bootstrap, 
+                      'table-bordered' ajoute des bordures à chaque cellule, et
+                      'table-striped' applique des styles alternés aux lignes pour améliorer la lisibilité.
+                    -->
+
+                        <thead class="thead-dark">
+                            <!--
+                          'thead-dark' applique un style sombre à l'en-tête du tableau.
+                        -->
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom</th>
+                                <th>Prénom</th>
+                                <th>Email</th>
+                                <th>Pays d'origine</th>
+                                <th>N° de Téléphone</th>
+                                <th>Image</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <!--
+                          Les données des étudiants sont affichées ici avec les actions disponibles pour chaque ligne.
+                        -->
+
+                            <table>
+                                <tr>
+                                    <td>001</td>
+                                    <td>Dupont</td>
+                                    <td>Jean</td>
+                                    <td>jean.dupont@example.com</td>
+                                    <td>USA</td>
+                                    <td>+123456789</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                            <!--
+                                      'img-thumbnail' applique un style de bordure autour de l'image pour la faire ressembler à une vignette.
+                                    -->
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <!--
+                                  Bouton pour modifier les informations, stylisé avec une couleur jaune (warning).
+                                -->
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <!--
+                                  Bouton pour archiver l'étudiant, stylisé avec une couleur grise (secondary).
+                                -->
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                        <!--
+                                  Bouton pour supprimer l'étudiant, stylisé avec une couleur rouge (danger).
+                                -->
+                                    </td>
+                                </tr>
+
+                                <!-- Ajoutez d'autres lignes ici pour les autres étudiants -->
+
+                                <tr>
+                                    <td>001</td>
+                                    <td>Dupont</td>
+                                    <td>Jean</td>
+                                    <td>jean.dupont@example.com</td>
+                                    <td>USA</td>
+                                    <td>+123456789</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>Nzogang Nzomo</td>
+                                    <td>Rodrigue</td>
+                                    <td>nzomo.rodrigue@tmrcomputing.com</td>
+                                    <td>CAMEROUN</td>
+                                    <td>+242 06 521 8412</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td>BEMALERA</td>
+                                    <td>Toussaint</td>
+                                    <td>kouratoussaint@ymail.com</td>
+                                    <td>BURKINA FASO</td>
+                                    <td>+226 75 49 35 18</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>004</td>
+                                    <td>NGOUNOU TCHUINTEU</td>
+                                    <td>Patricia Ornella</td>
+                                    <td>patriciatchuinteu@gmail.com</td>
+                                    <td>CAMEROUN</td>
+                                    <td>+237 65 62 36 045</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>005</td>
+                                    <td>NANKAM SEUTCHE</td>
+                                    <td>Fabrice</td>
+                                    <td>fanas009@yahoo.fr</td>
+                                    <td>CAMEROUN</td>
+                                    <td>+237 69 47 06 013</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>006</td>
+                                    <td>ALOUI</td>
+                                    <td>Sabiha</td>
+                                    <td>sabiha.aloui123@gmail.com</td>
+                                    <td>TUNISIE</td>
+                                    <td>+216 21 36 39 72</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>007</td>
+                                    <td>AMOUSSOUGBO</td>
+                                    <td>Serge Anani</td>
+                                    <td>amoussougboserge@gmail.com</td>
+                                    <td>BENIN</td>
+                                    <td>+229 40 44 03 89</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>008</td>
+                                    <td>DIALLO</td>
+                                    <td>Fatoumata Oury</td>
+                                    <td>tymatafa@gmail.com</td>
+                                    <td>SENEGAL</td>
+                                    <td>+221 77 87 17 321</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>009</td>
+                                    <td>MENSAH</td>
+                                    <td>Yvon</td>
+                                    <td>yvonmensah22@gmail.com</td>
+                                    <td>BENIN</td>
+                                    <td>+229 90 01 09 16</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>010</td>
+                                    <td>DJUISSI FOHOUO</td>
+                                    <td>Sidonie</td>
+                                    <td>sifohouo@gmail.com</td>
+                                    <td>CAMEROUN</td>
+                                    <td>+237 69 60 02 377</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>011</td>
+                                    <td>HOUANSOU</td>
+                                    <td>Michel</td>
+                                    <td>michelhouansou1998@gmail.com</td>
+                                    <td>BENIN</td>
+                                    <td>+229 96 35 41 09</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>012</td>
+                                    <td>MENSAH</td>
+                                    <td>Kokou Mawuna</td>
+                                    <td>meskojohn@gmail.com</td>
+                                    <td>TOGO</td>
+                                    <td>+228 91 98 33 77</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>013</td>
+                                    <td>SISSOKHO</td>
+                                    <td>El Hadji Samba</td>
+                                    <td>elhadjisamba.sissokho@gmail.com</td>
+                                    <td>SENEGAL</td>
+                                    <td>+221 77 26 72 143</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>014</td>
+                                    <td>MOUKOKO</td>
+                                    <td>Giovanni</td>
+                                    <td>giovanimoukoko@gmail.com</td>
+                                    <td>CONGO BRAZZAVILLE</td>
+                                    <td>+242 68 99 61 06</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>015</td>
+                                    <td>De SOUZA</td>
+                                    <td>Carles</td>
+                                    <td>carlesdesouza4@gmail.com</td>
+                                    <td>RDC</td>
+                                    <td>+243 82 05 15 953</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>016</td>
+                                    <td>GOUMOU</td>
+                                    <td>Jean-Baptiste</td>
+                                    <td>jeanbaptistegou@gmail.com</td>
+                                    <td>GUINEE CONAKRY</td>
+                                    <td>+224 62 93 00 229</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>017</td>
+                                    <td>KOUNTON</td>
+                                    <td>Angelo</td>
+                                    <td>sonagnonange@gmail.com</td>
+                                    <td>BENIN</td>
+                                    <td>+229 94 06 29 46</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>018</td>
+                                    <td>KAFFO</td>
+                                    <td>Ramiro</td>
+                                    <td>sonnyrakaffo@gmail.com</td>
+                                    <td>CAMEROUN</td>
+                                    <td>+237 67 22 79 946</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>019</td>
+                                    <td>DIAO</td>
+                                    <td>Hothia</td>
+                                    <td>hothiadiao@gmail.com</td>
+                                    <td>SENEGAL</td>
+                                    <td>+221 77 61 99 972</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>020</td>
+                                    <td>JOVY NEDVED</td>
+                                    <td>Monka-Kanda</td>
+                                    <td>jovymonka7@gmail.com</td>
+                                    <td>CONGO BRAZZAVILLE</td>
+                                    <td>+242 06 83 77 985</td>
+                                    <td>
+                                        <a href="./image/img19.jpeg">
+                                            <img src="./image/img19.jpeg" alt="Photo d'identité" class="img-thumbnail"
+                                                style="width: 2cm; height: 2cm; object-fit: cover;" />
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-sm btn-warning">Modifier</a>
+                                        <a href="#" class="btn btn-sm btn-secondary">Archiver</a>
+                                        <a href="#" class="btn btn-sm btn-danger">Supprimer</a>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+    </section>
