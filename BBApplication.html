@@ -2348,33 +2348,293 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
+                    <!-- <div class="form-group row">
                         <div class="col-sm-9 offset-sm-3">
                             <button type="submit" class="btn btn-primary btn-block">Ajouter l'Étudiant</button>
                         </div>
-                    </div>
+                    </div> -->
 
                 </form>
             </div>
         </div>
     </section>
+    <section id="knowledge-categories" class="knowledge-categories-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Revues de connaissances de l'etudiant </h2>
+            <div class="content-section">
+                <form action="#" method="POST" class="form-knowledge">
+                    <section id="knowledge-categories" class="knowledge-categories-section py-5">
+                        <div class="container">
+                            <h2 class="text-center mb-4">Sélectionnez vos connaissances</h2>
+                            <div class="content-section">
+                                <form action="#" method="POST" class="form-knowledge">
 
-    <!-- Footer Block -->
-    <footer class="footer bg-dark text-white py-3">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2024 NZOGANG NZOMO RODRIGUE. Tous droits réservés.</p>
-        </div>
-    </footer>
+                                    <!-- Analyste Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">Analyste :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="analyst_knowledge"
+                                                    checked id="analyst_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="analyst_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="analyst_knowledge"
+                                                    id="analyst_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="analyst_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="analyst_knowledge"
+                                                    id="analyst_advanced" value="advanced">
+                                                <label class="form-check-label" for="analyst_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
 
-    <!-- Link to Javascript -->
-    <!-- <script src="./js/scripts.js"></script> -->
+                                    <!-- Conception UML Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">Conception UML :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="uml_knowledge"
+                                                    id="uml_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="uml_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="uml_knowledge"
+                                                    checked id="uml_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="uml_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="uml_knowledge"
+                                                    id="uml_advanced" value="advanced">
+                                                <label class="form-check-label" for="uml_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+R34/NVOzC0L5CxX4k7Bj1t2M0F6B" crossorigin="anonymous">
-        </script>
+                                    <!-- Agilité Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">Agilité :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="agility_knowledge"
+                                                    checked id="agility_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="agility_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="agility_knowledge"
+                                                    id="agility_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="agility_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="agility_knowledge"
+                                                    id="agility_advanced" value="advanced">
+                                                <label class="form-check-label" for="agility_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Algorithm Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">Algorithme :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="algorithm_knowledge"
+                                                    checked id="algorithm_beginner" value="beginner" required>
+                                                <label class="form-check-label"
+                                                    for="algorithm_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="algorithm_knowledge"
+                                                    id="algorithm_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="algorithm_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="algorithm_knowledge"
+                                                    id="algorithm_advanced" value="advanced">
+                                                <label class="form-check-label" for="algorithm_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Git/GitHub Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">Git/GitHub :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="git_knowledge"
+                                                    checked id="git_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="git_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="git_knowledge"
+                                                    id="git_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="git_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="git_knowledge"
+                                                    id="git_advanced" value="advanced">
+                                                <label class="form-check-label" for="git_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- HTML/CSS Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">HTML/CSS :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="html_css_knowledge"
+                                                    checked id="html_css_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="html_css_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="html_css_knowledge"
+                                                    id="html_css_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="html_css_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="html_css_knowledge"
+                                                    id="html_css_advanced" value="advanced">
+                                                <label class="form-check-label" for="html_css_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- JavaScript Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">JavaScript :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="js_knowledge" checked
+                                                    id="js_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="js_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="js_knowledge"
+                                                    id="js_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="js_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="js_knowledge"
+                                                    id="js_advanced" value="advanced">
+                                                <label class="form-check-label" for="js_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Python Knowledge -->
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-3 col-form-label">Python :</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="python_knowledge"
+                                                    checked id="python_beginner" value="beginner" required>
+                                                <label class="form-check-label" for="python_beginner">Débutant</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="python_knowledge"
+                                                    id="python_intermediate" value="intermediate">
+                                                <label class="form-check-label"
+                                                    for="python_intermediate">Intermédiaire</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="python_knowledge"
+                                                    id="python_advanced" value="advanced">
+                                                <label class="form-check-label" for="python_advanced">Avancé</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <div class="form-group row">
+                                        <div class="col-sm-9 offset-sm-3">
+                                            <button type="submit" class="btn btn-primary btn-block">Ajouter
+                                                l'Étudiant</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="container">
+                        <div   class="row justify-content-center">
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="commentaires">Vos commentaires sur Etudiant</label>
+                                        <textarea class="form-control" id="commentaires" rows="3"
+                                            placeholder="Entrez votre commentaire ici"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Input checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="allLanguages">
+                        <label class="form-check-label" for="allLanguages">
+                            Accepter toutes les langues
+                        </label>
+                    </div>
+                    <!-- mail et envois de fichier -->
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <a href="NoticeProjet.txt" download="DocSpecificationFonctionnellesDetailleesEnsitech"
+                                    class="btn btn-primary">
+                                    <i class="bi bi-download"></i> Télécharger le document du projet
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="NoticeProjet.txt" download="DocSpecificationFonctionnellesDetailleesEnsitech">Teéécharger -->
+                    <!-- le docs Projet </a> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Un grand Merci pour cette vidéo por m'a permis de comrendre une bellepartie de
+                                    HTML:5!</p>
+                            </div>
+                            <div class="col-md-6">
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/qsbkZ7gIKnc?list=PLEiMYEzpB4QtYf4F6PwW57f971VqUzGhv&index=2"
+                                    title="YouTube video player:Apprendre HTML de zéro ⚙️ MAJ en description"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>  
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Block -->
+                    <footer class="footer bg-dark text-white py-3">
+                        <div class="container text-center">
+                            <p class="mb-0">&copy; 2024 NZOGANG NZOMO RODRIGUE. Tous droits réservés.</p>
+                        </div>
+                        <a href="mailto:nzomo.rodrigue@tmrcomputing.com">Ecrivez-Nous pour plus infos</a>
+
+                    </footer>
+
+                    <!-- Link to Javascript -->
+                    <!-- <script src="./js/scripts.js"></script> -->
+
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                        crossorigin="anonymous">
+                        </script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+R34/NVOzC0L5CxX4k7Bj1t2M0F6B"
+                        crossorigin="anonymous">
+                        </script>
 </body>
 <!-- <div class="form-group row mb-3">
                         <label for="birth-year" class="col-sm-3 col-form-label">Année de Naissance :</label>
