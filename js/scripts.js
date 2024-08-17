@@ -118,3 +118,28 @@ function add2() {
   // return a + 2;
   console.log(a + 2);
 }
+
+let name = "John"; // Modifiable
+const age = 30; // Non modifiable
+
+let number = 10;
+let text = "Hello";
+let isTrue = true;
+let myArray = [1, 2, 3];
+let myObject = { name: "John", age: 30 };
+
+if (age > 18) {
+  console.log("Adult");
+} else if (age === 18) {
+  console.log("Just turned adult");
+} else {
+  console.log("Not an adult");
+}
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+myArray.forEach(function (item) {
+  console.log(item);
+});

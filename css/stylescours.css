@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+@font-face {
+    font-family:"Merriweather" f;
+    src: url(../assets/Merriweather/Merriweather-BoldItalic.ttf);
+}
+
+body {
+    font-family: Merriweather,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: hsl(78, 100%, 50%);
+    letter-spacing: 20px;
+    background: url(../image/Imagesolution.png) center/cover;
+    /* Vh egale 100% de lataille de l'ecram  viewport height*/
+    min-height: 100vh;
+}
+h1 {
+text-transform: uppercase;
+letter-spacing: 4px;
+text-align: center;
+/* les tailles de polices doivent etre en rem  16Pixels=1rem*/
+font-size: 2.5rem;
+text-shadow: 9px 11px 6px #853939fc;
+color:#395a85fc;
+text-decoration: underline;
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main{
+    height: 500px;
+    width: 90%;
+    background: hwb(0 100% 0% / 0.466);
+/* centre uneboites  */
+    margin:0 auto;
+    border:2px solid blue;  
+    border-radius: 20px 20px 0 0;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
